@@ -5,14 +5,14 @@ on:
     tags:
       - '*'
 
-permissions:
-	contents: write
-
 env:
   INCLUDE_C6_H2: true
   INCLUDE_MINI_AP: false
   INCLUDE_Nano_AP: false
   INCLUDE_S2_Tag_Flasher: false
+
+permissions:
+  contents: write
 
 jobs:
   build:
