@@ -5,6 +5,9 @@ on:
     tags:
       - '*'
 
+permissions:
+	contents: write
+
 env:
   INCLUDE_C6_H2: true
   INCLUDE_MINI_AP: false
@@ -154,6 +157,7 @@ jobs:
           cd /home/runner/work/OpenEPaperLink/OpenEPaperLink
           cp S2_Tag_Flasher/firmware.bin espbinaries/S2_Tag_Flasher.bin
           cp S2_Tag_Flasher/merged-firmware.bin espbinaries/S2_Tag_Flasher_full.bin
+
       - name: Add esp bins to release
         uses: svenstaro/upload-release-action@v2
         with:
