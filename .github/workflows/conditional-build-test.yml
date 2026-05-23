@@ -69,6 +69,7 @@ jobs:
           #- OpenEPaperLink_Mini_AP
           #- OpenEPaperLink_AP_and_Flasher
           - ESP32_S3_16_8_YELLOW_AP
+          - ESP32_S3_16_8_YELLOW_APN
           - OpenEPaperLink_Mini_AP_v4
           - OpenEPaperLink_ESP32-PoE-ISO_AP
     runs-on: ubuntu-latest
